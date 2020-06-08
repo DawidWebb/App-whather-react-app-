@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.css";
 
-const Form = () => {
+const Form = (props) => {
   return (
     <form>
-      <input type="text" />
+      <input
+        onChange={props.change}
+        type="text"
+        value={props.value}
+        placeholder="Wpisz miasto..."
+      />
       <button>Wyszukaj miasta</button>
     </form>
   );
