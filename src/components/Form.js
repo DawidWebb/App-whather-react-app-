@@ -3,7 +3,7 @@ import "./App.css";
 
 const Form = (props) => {
   return (
-    <form>
+    <form onSubmit={props.submit}>
       <input
         onChange={props.change}
         type="text"
